@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Users List</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="#">Users List</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <button type="button" name="button" class="download">Download</button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <div class="ml-auto">
+                    <input type="text" class="search-input">
+                    <button class="search">Search</button>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="main">
+        <div class="users-container">
+
+        </div>
+    </main>
+
+
+    <!-- Modal User Info -->
+    <div class="modal fade" id="usersEditModal" aria-labelledby="userLabel" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="userLabel">User Info</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body row">
+              <div class="col-md-4">
+                <label for="age">Age</label>
+                <div>
+                  <input type="text" class="card-age" id="age">
+                </div>
+              </div>
+              <div class="col-md-4">
+                <label for="name">Name</label>
+                <div>
+                  <input type="text" class="card-name" id="name">
+                </div>
+              </div>
+              <div class="col-md-4">
+                <label for="gender">Gender</label>
+                <div>
+                  <input type="text" class="card-gender" id="gender">
+                </div>
+              </div>
+              <div class="col-md-4">
+                <label for="company">Company</label>
+                <div>
+                  <input type="text" class="card-company" id="company">
+                </div>
+              </div>
+              <div class="col-md-4">
+                <label for="email">Email</label>
+                <div>
+                  <input type="text" class="card-email" id="email">
+                </div>
+              </div>
+              <div class="col-md-4">
+                <label for="phone">Phone</label>
+                <div>
+                  <input type="text" class="card-phone" id="phone">
+                </div>
+              </div>
+              <div class="col-md-4">
+                <label for="address">Address</label>
+                <div>
+                  <input type="text" class="card-address" id="address">
+                </div>
+              </div>
+              <div class="col-md-4">
+                <label for="about">About</label>
+                <div>
+                  <input type="text" class="card-about" id="about">
+                </div>
+              </div>
+              <div class="col-md-4">
+                <label for="registered">Registered</label>
+                <div>
+                  <input type="text" class="card-registered" id="registered">
+                </div>
+              </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            <button class="btn btn-primary save">Save</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+
+    <script defer src="js/users-list.js"></script>
+    <script defer src="js/index.js"></script>
+</body>
+
+</html>
